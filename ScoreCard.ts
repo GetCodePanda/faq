@@ -36,8 +36,9 @@ class FullScoreCards extends ScoreCards {
     }
 
     getFullScoreCard() {
-        var runsAndBalls = super.getScore();
-        return {...runsAndBalls , fours: this.fours , sixes: this.sixes}
+        // var runsAndBalls = super.getScore();
+        // return {...runsAndBalls , fours: this.fours , sixes: this.sixes}
+        return {runs: this.runs , balls : this.balls , fours: this.fours , sixes: this.sixes};
     }
 
     logFullScoreCard() {
